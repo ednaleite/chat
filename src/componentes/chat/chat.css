@@ -1,0 +1,28 @@
+.chat-conteudo{
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    height: calc(100vh - 19px);
+    
+    
+}
+ .conteudo{
+    background-color:#cccccc ;
+ }
+
+
+.chat-header{
+text-align: center;
+}
+
+
+.chat-conversa{
+
+
+}
+
+
+.chat-mensagem{
+
+}
+
+
