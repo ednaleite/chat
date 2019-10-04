@@ -17,7 +17,7 @@ class ChatConversa extends Component{
 
           {
             msg.origem === "bot" && <span>
-            <Badge color='warning'>Chatbot disse:</Badge>
+            <Badge color='warning'>Iracema disse:</Badge>
             <Alert color='warning'>{msg.texto}</Alert>
             </span>
           }

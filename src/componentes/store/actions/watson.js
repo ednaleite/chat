@@ -1,4 +1,5 @@
 import axios from  'axios'
+import {enviaMensagem} from './chat'
 
 
 export const conversaWatsonRequest = () => {
@@ -34,8 +35,16 @@ export const conversaWatson = ((mensagem, contexto) => {
         dispatch(conversaWatsonRequest())
         //chama o back do watson      
         const url = 'http://localhost:5000/chatbot-8da63/us-central1/conversa'
-        axios.post(url,{mensagem, contexto})
-        .then((data) => dispatch(conversaWatsonSucess(data)))
+        axios.get(url,{ input: mensagem.texto, context: contexto })
+        .then((data) => {
+            dispatch(conversaWatsonSucess(data))
+            const msg = {
+                texto: data.data.output.text[0],
+                origem: 'bot'
+            }
+             
+            dispatch(enviaMensagem(msg))
+        })
         .catch(() => dispatch(conversaWatsonError()))
     }
 })

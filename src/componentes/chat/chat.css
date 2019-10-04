@@ -16,8 +16,7 @@ text-align: center;
 
 
 .chat-conversa{
-
-
+overflow: auto;
 }
 
 
