@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Alert,Badge} from 'reactstrap'
 import {connect} from 'react-redux'
+import '../chat/chat.css';
 
 
 class ChatConversa extends Component{
@@ -10,15 +11,19 @@ class ChatConversa extends Component{
             <div key = {k}>
           {
               msg.origem === "user" && <span>
-              <Badge color='primary'>Você disse:</Badge>
+                  <div className='usuario'>
+              <Badge color='primary' id="usertalk">Você disse</Badge>
               <Alert color='primary'>{msg.texto}</Alert>
+                 </div>
               </span>
           }
 
           {
             msg.origem === "bot" && <span>
-            <Badge color='warning'>Iracema disse:</Badge>
+                <div className='iracema'>
+            <Badge color='warning'>Iracema disse</Badge>
             <Alert color='warning'>{msg.texto}</Alert>
+            </div>
             </span>
           }
              </div>

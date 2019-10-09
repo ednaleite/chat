@@ -4,16 +4,19 @@ import ChatMensagem from './chat/ChatMensagem';
 import ChatConversa from './chat/ChatConversa';
 import './chat/chat.css';
 
+
 class Chatbot extends Component{
     render(){
-        return(
+        return( 
             <div className="chatbot">
                 <div className='chat-conteudo'>
                 <ChatHeader/>
                 <ChatConversa/>
                 <ChatMensagem/>
-                </div>
+                </div> 
+               
             </div>
+       
         );
     }
 }

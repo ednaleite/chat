@@ -3,7 +3,7 @@ import {InputGroup, Input, InputGroupAddon, Button} from 'reactstrap'
 import {connect} from 'react-redux'
 import {enviaMensagem} from '../store/actions/chat'
 import {conversaWatson} from './../store/actions/watson'
-
+import '../chat/chat.css';
 
 class ChatMensagem extends Component{
    constructor(props){
@@ -38,7 +38,7 @@ class ChatMensagem extends Component{
             <div className='chat-mensagem'>
                 <hr/>
                 <InputGroup>
-                <Input onKeyDown={this.inputEnviaTexto} placeholder=' Digite sua mensagem'/>
+                <Input onKeyDown={this.inputEnviaTexto} placeholder=' Pergunte-me'/>
                <InputGroupAddon addonType='append'>
                    <Button color='success'>Enviar</Button>
                </InputGroupAddon>

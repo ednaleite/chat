@@ -1,0 +1,462 @@
+[debug] [2019-10-09T17:40:44.542Z] ----------------------------------------------------------------------
+[debug] [2019-10-09T17:40:44.548Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Suporte\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-10-09T17:40:44.548Z] CLI Version:   7.4.0
+[debug] [2019-10-09T17:40:44.548Z] Platform:      win32
+[debug] [2019-10-09T17:40:44.548Z] Node Version:  v10.16.3
+[debug] [2019-10-09T17:40:44.550Z] Time:          Wed Oct 09 2019 14:40:44 GMT-0300 (GMT-03:00)
+[debug] [2019-10-09T17:40:44.550Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-09T17:40:44.618Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-09T17:40:44.620Z] > authorizing via signed-in user
+[debug] [2019-10-09T17:40:44.620Z] [iam] checking project chatbot-8da63 for permissions ["firebase.projects.get"]
+[debug] [2019-10-09T17:40:44.625Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-09T17:40:44.626Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-10-09T17:40:45.320Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-09T17:40:45.372Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-8da63:testIamPermissions  
+
+[debug] [2019-10-09T17:40:46.617Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-09T17:40:46.620Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chatbot-8da63  
+ 
+[debug] [2019-10-09T17:40:48.166Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@10 from host.
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Suporte\chat-app\functions" for Cloud Functions...
+[debug] [2019-10-09T17:40:49.214Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[debug] [2019-10-09T17:40:49.214Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:40:49.217Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:40:49.218Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:40:49.219Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[conversa]: http function initialized (http://localhost:5000/chatbot-8da63/us-central1/conversa).
+[debug] [2019-10-09T17:40:55.419Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T17:40:56.067Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T17:40:56.069Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:40:56.071Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:40:56.073Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:40:56.074Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:40:56.266Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T17:40:56.267Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T17:40:56.267Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T17:40:56.281Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3472"}
+[debug] [2019-10-09T17:40:56.287Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3472"}
+[debug] [2019-10-09T17:40:56.299Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T17:40:56.332Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T17:41:02.667Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T17:41:03.266Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T17:41:03.267Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:41:03.270Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:41:03.272Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:03.273Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:03.432Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T17:41:03.433Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T17:41:03.433Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T17:41:03.442Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7424"}
+[debug] [2019-10-09T17:41:03.444Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7424"}
+[debug] [2019-10-09T17:41:03.453Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T17:41:03.487Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T17:41:21.400Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T17:41:22.001Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T17:41:22.002Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:41:22.005Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:41:22.007Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:22.008Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:22.197Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T17:41:22.197Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T17:41:22.197Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T17:41:22.209Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4916"}
+[debug] [2019-10-09T17:41:22.210Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4916"}
+[debug] [2019-10-09T17:41:22.221Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T17:41:22.257Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~3s
+[debug] [2019-10-09T17:41:53.305Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T17:41:54.062Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T17:41:54.063Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:41:54.066Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:41:54.068Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:54.069Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:41:54.265Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T17:41:54.265Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T17:41:54.265Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T17:41:54.280Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8584"}
+[debug] [2019-10-09T17:41:54.283Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8584"}
+[debug] [2019-10-09T17:41:54.297Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T17:41:54.331Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T17:42:01.005Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T17:42:01.533Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T17:42:01.534Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T17:42:01.537Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T17:42:01.539Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:42:01.540Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T17:42:01.696Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T17:42:01.696Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T17:42:01.696Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T17:42:01.706Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7528"}
+[debug] [2019-10-09T17:42:01.707Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7528"}
+[debug] [2019-10-09T17:42:01.716Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T17:42:01.751Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T18:16:05.220Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:16:05.945Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:16:05.946Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:16:05.949Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:16:05.951Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:05.952Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:06.129Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:16:06.129Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:16:06.129Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:16:06.141Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6668"}
+[debug] [2019-10-09T18:16:06.143Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6668"}
+[debug] [2019-10-09T18:16:06.155Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:16:06.194Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T18:16:19.912Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:16:20.927Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:16:20.928Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:16:20.931Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:16:20.933Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:20.934Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:21.145Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:16:21.145Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:16:21.145Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:16:21.157Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2628"}
+[debug] [2019-10-09T18:16:21.158Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2628"}
+[debug] [2019-10-09T18:16:21.167Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:16:21.207Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:16:54.822Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:16:55.546Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:16:55.547Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:16:55.550Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:16:55.551Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:55.553Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:16:55.729Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:16:55.730Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:16:55.730Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:16:55.740Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4156"}
+[debug] [2019-10-09T18:16:55.744Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4156"}
+[debug] [2019-10-09T18:16:55.753Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:16:55.795Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:17:28.890Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:17:29.470Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:17:29.470Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:17:29.474Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:17:29.476Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:17:29.477Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:17:29.645Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:17:29.645Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:17:29.645Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:17:29.655Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6540"}
+[debug] [2019-10-09T18:17:29.656Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6540"}
+[debug] [2019-10-09T18:17:29.671Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:17:29.701Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:31:03.472Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:31:04.399Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:31:04.401Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:31:04.403Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:31:04.405Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:31:04.407Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:31:04.804Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:31:04.804Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:31:04.805Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:31:04.856Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2852"}
+[debug] [2019-10-09T18:31:04.874Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2852"}
+[debug] [2019-10-09T18:31:04.883Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:31:04.938Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:33:16.148Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:33:16.748Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:33:16.750Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:33:16.752Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:33:16.754Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:33:16.756Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:33:16.932Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:33:16.932Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:33:16.932Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:33:16.943Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4380"}
+[debug] [2019-10-09T18:33:16.944Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4380"}
+[debug] [2019-10-09T18:33:16.956Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:33:16.987Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:33:18.809Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:33:19.477Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:33:19.478Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:33:19.481Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:33:19.483Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:33:19.484Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:33:19.651Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:33:19.651Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:33:19.651Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:33:19.661Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3580"}
+[debug] [2019-10-09T18:33:19.662Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3580"}
+[debug] [2019-10-09T18:33:19.674Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:33:19.710Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T18:34:46.231Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:34:46.981Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:34:46.984Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:34:46.986Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:34:46.988Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:34:46.989Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:34:47.167Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:34:47.168Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:34:47.168Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:34:47.180Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3716"}
+[debug] [2019-10-09T18:34:47.182Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3716"}
+[debug] [2019-10-09T18:34:47.194Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:34:47.233Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T18:34:53.364Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T18:34:53.923Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T18:34:53.924Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T18:34:53.927Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T18:34:53.929Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:34:53.930Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T18:34:54.096Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T18:34:54.096Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T18:34:54.096Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T18:34:54.107Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\1384"}
+[debug] [2019-10-09T18:34:54.108Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\1384"}
+[debug] [2019-10-09T18:34:54.119Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T18:34:54.155Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T19:27:51.223Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:27:51.820Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:27:51.823Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:27:51.825Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:27:51.826Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:27:51.827Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:27:52.005Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:27:52.005Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:27:52.005Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:27:52.016Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7804"}
+[debug] [2019-10-09T19:27:52.018Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\7804"}
+[debug] [2019-10-09T19:27:52.032Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:27:52.063Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T19:27:59.352Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:27:59.900Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:27:59.901Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:27:59.907Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:27:59.908Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:27:59.908Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:28:00.073Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:28:00.073Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:28:00.073Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:28:00.083Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8408"}
+[debug] [2019-10-09T19:28:00.084Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8408"}
+[debug] [2019-10-09T19:28:00.094Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:28:00.129Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s
+[debug] [2019-10-09T19:33:11.790Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:33:12.358Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:33:12.360Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:33:12.363Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:33:12.364Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:33:12.366Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:33:12.546Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:33:12.546Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:33:12.546Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:33:12.557Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\5856"}
+[debug] [2019-10-09T19:33:12.559Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\5856"}
+[debug] [2019-10-09T19:33:12.569Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:33:12.604Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:33:18.741Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:33:19.311Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:33:19.312Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:33:19.315Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:33:19.317Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:33:19.318Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:33:19.490Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:33:19.490Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:33:19.491Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:33:19.501Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4596"}
+[debug] [2019-10-09T19:33:19.503Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4596"}
+[debug] [2019-10-09T19:33:19.516Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:33:19.548Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:36:06.256Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:36:06.845Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:36:06.848Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:36:06.850Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:36:06.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:06.852Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:07.022Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:36:07.022Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:36:07.022Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:36:07.032Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\5988"}
+[debug] [2019-10-09T19:36:07.034Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\5988"}
+[debug] [2019-10-09T19:36:07.043Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:36:07.079Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:36:23.724Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:36:24.323Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:36:24.324Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:36:24.327Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:36:24.329Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:24.330Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:24.498Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:36:24.498Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:36:24.498Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:36:24.509Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8212"}
+[debug] [2019-10-09T19:36:24.510Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\8212"}
+[debug] [2019-10-09T19:36:24.519Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:36:24.556Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:36:54.451Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:36:55.164Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:36:55.166Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:36:55.169Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:36:55.170Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:55.171Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:36:55.337Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:36:55.337Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:36:55.337Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:36:55.348Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3404"}
+[debug] [2019-10-09T19:36:55.350Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\3404"}
+[debug] [2019-10-09T19:36:55.360Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:36:55.395Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:37:01.484Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:37:02.041Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:37:02.043Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:37:02.045Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:37:02.047Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:37:02.048Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:37:02.218Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:37:02.218Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:37:02.218Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:37:02.229Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6752"}
+[debug] [2019-10-09T19:37:02.230Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6752"}
+[debug] [2019-10-09T19:37:02.243Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:37:02.273Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:37:18.824Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:37:19.415Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:37:19.418Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:37:19.419Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:37:19.421Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:37:19.422Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:37:19.591Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:37:19.591Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:37:19.591Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:37:19.602Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4232"}
+[debug] [2019-10-09T19:37:19.604Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4232"}
+[debug] [2019-10-09T19:37:19.618Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:37:19.654Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:39:38.109Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:39:38.818Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:39:38.820Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:39:38.822Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:39:38.824Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:39:38.825Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:39:39.004Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:39:39.004Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:39:39.004Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:39:39.014Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2664"}
+[debug] [2019-10-09T19:39:39.016Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\2664"}
+[debug] [2019-10-09T19:39:39.029Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:39:39.066Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:39:45.504Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:39:46.242Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:39:46.244Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:39:46.247Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:39:46.249Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:39:46.250Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:39:46.448Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:39:46.448Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:39:46.449Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:39:46.459Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6172"}
+[debug] [2019-10-09T19:39:46.460Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\6172"}
+[debug] [2019-10-09T19:39:46.468Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:39:46.504Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:40:16.612Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:40:17.207Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:40:17.208Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:40:17.211Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:40:17.212Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:40:17.214Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:40:17.383Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:40:17.383Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:40:17.383Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:40:17.393Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\1564"}
+[debug] [2019-10-09T19:40:17.395Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\1564"}
+[debug] [2019-10-09T19:40:17.403Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:40:17.440Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-09T19:42:29.740Z] Accepted request GET /chatbot-8da63/us-central1/conversa --> conversa
+[debug] [2019-10-09T19:42:30.839Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Suporte\\chat-app\\functions","node_version":"10.16.3"}
+[info] i  functions: Beginning execution of "conversa"
+[debug] [2019-10-09T19:42:30.850Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-09T19:42:30.850Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-10-09T19:42:30.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:42:30.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Suporte\\chat-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-10-09T19:42:31.071Z] [runtime-status] Trigger "conversa" has been found, beginning invocation! {}
+[debug] [2019-10-09T19:42:31.072Z] [runtime-status]  {"httpsTrigger":{},"name":"conversa","entryPoint":"conversa"}
+[debug] [2019-10-09T19:42:31.073Z] [runtime-status] Running conversa in mode HTTPS {}
+[debug] [2019-10-09T19:42:31.084Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4120"}
+[debug] [2019-10-09T19:42:31.085Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Suporte\\chat-app\\functions\\4120"}
+[debug] [2019-10-09T19:42:31.097Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-09T19:42:31.136Z] [runtime-status] Ephemeral server survived. {}
+[info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
+[info] i  functions: Finished "conversa" in ~2s

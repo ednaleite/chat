@@ -1,12 +1,19 @@
 .chat-conteudo{
     display: grid;
-    grid-template-rows: 80px auto 80px;
-    height: calc(100vh - 19px);
+    grid-template-rows: 20px auto 80px;
+    height: calc(100vh - 240px);
     
     
 }
- .conteudo{
-    background-color:#cccccc ;
+ #conteudo{
+    background-color: rgba(174, 156, 105, .8);
+    border-radius: 6px 6px;
+    display: none;
+    margin-top: 25%;
+    position: relative;
+    width: 50%;
+    left:40%;
+   
  }
 
 
@@ -19,9 +26,19 @@ text-align: center;
 overflow: auto;
 }
 
+#usertalk{
+    margin-left:60%;
+  }
+ 
+.usuario{
+    padding: 7px 7px;
+}
 
-.chat-mensagem{
-
+.iracema{
+    padding: 7px 7px;
 }
 
 
+.chat-mensagem{
+    padding: 2px 7px;
+}

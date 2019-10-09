@@ -4,9 +4,7 @@ import {Alert} from 'reactstrap'
 const ChatHeader = props => {
     return(
         <div className='chat-header'>
-            <Alert color='dark'>
-                <h3>Chatbot</h3>
-            </Alert>
+           x
         </div>
     );
 }
