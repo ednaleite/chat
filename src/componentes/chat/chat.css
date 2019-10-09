@@ -9,10 +9,10 @@
     background-color: rgba(174, 156, 105, .8);
     border-radius: 6px 6px;
     display: none;
-    margin-top: 25%;
+    margin-top: 22%;
     position: relative;
-    width: 50%;
-    left:40%;
+    width: 65%;
+    left:30%;
    
  }
 
@@ -36,8 +36,8 @@ overflow: auto;
 
 .iracema{
     padding: 7px 7px;
+  
 }
-
 
 .chat-mensagem{
     padding: 2px 7px;
