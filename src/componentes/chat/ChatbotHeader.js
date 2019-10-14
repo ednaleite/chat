@@ -1,10 +1,17 @@
 import React from 'react'
-import {Alert} from 'reactstrap'
+import {Alert,  Button} from 'reactstrap'
+import './chat.css'
+
 
 const ChatHeader = props => {
-    return(
+
+    function minimizar() {
+        var elemento = document.getElementById("conteudo");
+        elemento.style.display = 'none'; };
+
+    return(       
         <div className='chat-header'>
-           x
+          <a onClick={minimizar} id='fechar'><img src='images/imgx.png' id='imgx'/></a>
         </div>
     );
 }

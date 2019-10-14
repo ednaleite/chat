@@ -21,7 +21,7 @@ class ChatMensagem extends Component{
         }
         
         let contexto = {}
-        console.log('negocio', this.props.resposta)
+        //console.log('negocio', this.props.resposta)
         if (this.props.resposta.data && this.props.resposta.data.context) {
             contexto = this.props.resposta.data.context
         }
@@ -38,7 +38,7 @@ class ChatMensagem extends Component{
             <div className='chat-mensagem'>
                 <hr/>
                 <InputGroup>
-                <Input onKeyDown={this.inputEnviaTexto} placeholder=' Pergunte-me'/>
+                <Input onKeyDown={this.inputEnviaTexto} placeholder=' Pergunte-me' id='input'/>
                <InputGroupAddon addonType='append'>
                    <Button color='success'>Enviar</Button>
                </InputGroupAddon>

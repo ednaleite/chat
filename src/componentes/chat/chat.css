@@ -2,20 +2,8 @@
     display: grid;
     grid-template-rows: 20px auto 80px;
     height: calc(100vh - 240px);
-    
-    
-}
- #conteudo{
-    background-color: rgba(174, 156, 105, .8);
-    border-radius: 6px 6px;
-    display: none;
-    margin-top: 22%;
-    position: relative;
-    width: 65%;
-    left:30%;
-   
- }
 
+}
 
 .chat-header{
 text-align: center;
@@ -27,7 +15,7 @@ overflow: auto;
 }
 
 #usertalk{
-    margin-left:60%;
+    /* margin-left:60%; */
   }
  
 .usuario{
@@ -39,6 +27,76 @@ overflow: auto;
   
 }
 
+#textuser{
+    border-radius: 50px 50px 50px 50px;
+}
+
 .chat-mensagem{
     padding: 2px 7px;
 }
+
+
+#fechar{
+    margin-left: 85%;
+}
+
+#imgx{
+    width: 20px;
+    height: 20px;
+}
+
+#conteudo{
+   background-color: #f4f4f4;
+   border-radius: 8px 8px;
+   display: none;
+   position: relative;
+   width: 100%;
+}
+
+
+#imgchat{
+    position: fixed;
+    width: 70vw;
+    height: 85vh;
+    top: 10%;
+    left:25%;
+}
+
+#img{
+    position: relative;
+    z-index:4;
+    margin: 3% 65%;
+    width:40%;
+    border-radius: 50%;
+    top: 80%;
+  
+    animation: pulse 1s infinite;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+     
+    }
+    100% {
+      transform: scale(1.1);
+     
+    }
+  }
+  
+   @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+     
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+     
+    }
+  }
+  

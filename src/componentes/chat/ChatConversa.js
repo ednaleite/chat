@@ -12,8 +12,8 @@ class ChatConversa extends Component{
           {
               msg.origem === "user" && <span>
                   <div className='usuario'>
-              <Badge color='primary' id="usertalk">Você disse</Badge>
-              <Alert color='primary'>{msg.texto}</Alert>
+              <Badge color='info' id="usertalk">Você disse</Badge>
+              <Alert color='info'>{msg.texto}</Alert>
                  </div>
               </span>
           }
@@ -21,8 +21,8 @@ class ChatConversa extends Component{
           {
             msg.origem === "bot" && <span>
                 <div className='iracema'>
-            <Badge color='warning'>Iracema disse</Badge>
-            <Alert color='warning'>{msg.texto}</Alert>
+            <Badge color='dark'>Iracema disse</Badge>
+            <Alert color='dark'>{msg.texto}</Alert>
             </div>
             </span>
           }

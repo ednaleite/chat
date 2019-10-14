@@ -780,3 +780,27 @@
 [debug] [2019-10-09T20:40:44.118Z] [runtime-status] Ephemeral server survived. {}
 [info] >  watson disse:  Olá, eu sou a Iracema, assistente virtual do Grupo Nobre
 [info] i  functions: Finished "conversa" in ~1s
+[debug] [2019-10-14T12:19:07.849Z] ----------------------------------------------------------------------
+[debug] [2019-10-14T12:19:07.855Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Suporte\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-10-14T12:19:07.856Z] CLI Version:   7.4.0
+[debug] [2019-10-14T12:19:07.856Z] Platform:      win32
+[debug] [2019-10-14T12:19:07.856Z] Node Version:  v10.16.3
+[debug] [2019-10-14T12:19:07.857Z] Time:          Mon Oct 14 2019 09:19:07 GMT-0300 (GMT-03:00)
+[debug] [2019-10-14T12:19:07.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-14T12:19:07.935Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-14T12:19:07.937Z] > authorizing via signed-in user
+[debug] [2019-10-14T12:19:07.937Z] [iam] checking project chatbot-8da63 for permissions ["firebase.projects.get"]
+[debug] [2019-10-14T12:19:07.941Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-14T12:19:07.942Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-10-14T12:19:08.544Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-14T12:19:08.575Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-8da63:testIamPermissions  
+
+[debug] [2019-10-14T12:19:09.321Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-14T12:19:09.324Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chatbot-8da63  
+ 
+[debug] [2019-10-14T12:19:10.078Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@10 from host.
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Suporte\chat-app\functions" for Cloud Functions...

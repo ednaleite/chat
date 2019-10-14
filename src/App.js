@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import './App.css';
-import './popup.js';
+import './componentes/chat/chat.css'
 import 'jquery';
 import Chatbot from './componentes/chatbot';
 import {Provider} from 'react-redux'
@@ -8,42 +8,39 @@ import store from  './componentes/store'
 
 
 function App() {
-   
-var count = 0;
 
 function toggle() {
-  var elemento = document.getElementById("conteudo");
-  elemento.style.display = 'none';
+  var chat = document.getElementById("conteudo");
+  var icone = document.getElementById("img");
 
-  if(count%2 == 0 ){
-      elemento.style.display = 'block';
-      count++;
-    }
-  else if(count%2 != 0) {
-      elemento.style.display = 'none';
-      count--;
-    }
+  if(!chat.style.display){
+    chat.style.display = 'none';
+  }
+
+  if(chat.style.display == 'none'){
+    chat.style.display = 'block';
+  }
+
+  else if(chat.style.display == 'block') {
+    chat.style.display = 'none';
+  }
 };
 
   return (
-    <div>
-   
 
+    <div>
       <Provider store = {store}>
+        <div id='imgchat'>
             <div id="conteudo">
               <Chatbot/>
             </div>
+            
+             <img src="images/iracema.jpg" onClick={toggle} id="img" />
+             
+        </div>
       </Provider>
-    
-
-      <Fragment>
-        <img src="images/iracema.jpg" onClick={toggle} id="img" />
-      </Fragment>
     </div>
-    
-    
   );
-  
 }
 
 export default App;
